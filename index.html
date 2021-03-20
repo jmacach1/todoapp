@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TodoList</title>
-</head>
-<body>
-
-  <header>
-    <div>
-      <h1>TodoList</h1>
-    </div>
-  </header>
- 
-  <main>
-    <!-- Input -->
-    <section class="input_section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
       <div>
-        <form id="todo_form">
-          <input type="text" id="todo_input">
-          <input type="submit" id="todo_submit"> 
-        </form>
+        <h1 class="title">Todo List</h1>
       </div>
-    </section>
+    </header>
 
-    <!-- Output -->
-    <section class="output_section">
-      <ul id="todo_list">
+    <main>
+      <!-- Input -->
+      <section class="input_section">
+        <div>
+          <form id="todo_form" class="todo-form">
+            <input type="text" id="todo_input" class="todo-input" />
+            <input type="submit" id="todo_submit" class="todo-add" value="➕" />
+          </form>
+        </div>
+      </section>
 
-      </div>
-    </section>
-  </main>
+      <!-- Output -->
+      <section class="output_section">
+        <div id="todo_list" class="todo-list">
+          <!-- <div class="todo_div">
+            <span class="todo-item">rthsfhgs</span>
+            <span class="remove-x">❌</span>
+          </div> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>All Rights Reserved. Jerald Macachor.</p>
+    </footer>
 
-  <footer>
-
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
