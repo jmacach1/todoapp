@@ -51,9 +51,8 @@ function removeTodo(event) {
 
 const todosDisplay = document.getElementById('todo_list');
 const input_text = "todo_input";
+const todosForm = document.getElementById('todo_form');
 
-// todosDisplay
 document.addEventListener('DOMContentLoaded', function(event) {
-  const todosForm = document.getElementById('todo_form');
   todosForm.addEventListener('submit', addTodo);
 })
